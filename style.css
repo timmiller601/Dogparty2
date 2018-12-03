@@ -1,0 +1,229 @@
+/*broad styles*/
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  font-family: "ABeeZee", serif;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+}
+
+
+/*header styles*/
+header {
+  background-color: #92E0E5;
+  padding: 5px 0;
+  border-style: solid;
+  border-bottom-color: #3F8DA7;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+
+.dog-icon {
+  float: left;
+  height: 35px;
+  margin-left: 25px;
+}
+
+.head-table {
+  color: black;
+  float: right;
+  font-size: 17px;
+  margin: 5px 25px 5px auto;
+}
+
+.head-td:hover {
+  background-color: #3F8DA7;
+  cursor: pointer;
+}
+
+.clear-fix:after {
+  content: ' ';
+  clear: both;
+  display: table;
+}
+
+.head-td {
+  padding: 2px 15px;
+  list-style: none;
+  display: inline-flex;
+}
+
+
+/*main content styles*/
+
+.facts-td {
+  font-size: 30px;
+}
+
+.head-dog {
+  background-image: url("Images/images/park.jpg");
+  background-size: cover;
+  padding: 20px 0 30px 0;
+}
+
+.head-dog-img {
+  border: 4px solid #3F8DA7;
+  border-radius: 100%;
+  margin: 5px auto;
+}
+
+.form {
+  color: black;
+}
+
+.name-this-dog {
+  background-color: #92E0E5;
+  border: hidden;
+  border-radius: 2px;
+  font-size: 18px;
+  margin: 10px auto;
+  padding: 3px 8px;
+  width: 300px;
+  height: 40px;
+}
+
+.name-this-dog:hover {
+  background-color: #3F8DA7;
+  cursor: pointer;
+}
+
+
+.name {
+  padding-right: 257px;
+  margin-bottom: 0px;
+}
+
+input {
+  width: 300px;
+  height: 40px;
+  padding-left: 28px;
+  border-color: #3F8DA7;
+  border-radius: 2px;
+}
+
+input:hover {
+  cursor: pointer;
+}
+/*info section*/
+
+
+.card {
+  margin: auto;
+  margin-top: 10px;
+  display: inline-block;
+  /*float: left;*/
+  width: 33%;
+  height: 700px;
+}
+
+
+.words {
+  text-align: left;
+  padding-left: 7%;
+  width: 85%;
+}
+
+.dog-facts {
+  overflow: auto;
+}
+
+.dog-img {
+  border: 3px solid #3F8DA7;
+  border-radius: 100%;
+  margin: 10px 75px;
+  width: 50%;
+}
+
+
+.btm {
+  color: #FFFFFF;
+  background-color: #3F8DA7;
+  border: hidden;
+  border-radius: 2px;
+  font-size: 18px;
+  margin: 10px auto;
+  width: 87%;
+  height: 50px;
+}
+
+.btm:hover {
+  background-color: #92E0E5;
+  cursor: pointer;
+}
+
+
+
+
+/*footer styles*/
+footer,
+a {
+  color: white;
+}
+
+footer {
+  background-color: #3F8DA7;
+  padding: 5px 0;
+}
+
+.footer-img {
+  margin: 10px 5px;
+}
+
+.footer-img:hover {
+  background-color: #92E0E5;
+  cursor: pointer;
+}
+
+
+/*media query for smaller screens*/
+@media(max-width: 1200px) {
+
+  .card {
+    width: 34%;
+    height: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    background-color: yellow;
+  }
+
+  .form {
+    color: white;
+  }
+
+
+@media(max-width: 800px) {
+  .card {
+    width: 45%;
+    height: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .form {
+    color: white;
+  }
+}
+
+@media(max-width: 600px) {
+  .head-dog {
+    height: 50%;
+  }
+
+  .card {
+    width: 65%;
+    height: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .form {
+    color: white;
+  }
+
+  .head-table {
+    display: none;
+  }
